@@ -1,0 +1,112 @@
+/*
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    display: box;
+    box-orient: horizontal;
+    box-pack: center;
+    box-align: center;
+*/
+a, input, button:focus {
+  outline: none !important;
+  text-decoration: none; }
+
+.clear {
+  clear: both; }
+
+.hidden {
+  display: none; }
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+input, button {
+  display: block;
+  margin: 0 auto; }
+  input::-moz-focus-inner, button::-moz-focus-inner {
+    border: 0; }
+
+body, html {
+  margin: 0;
+  padding: 0; }
+
+hr {
+  border: none;
+  margin: 0; }
+
+a.logo {
+  display: block; }
+
+@font-face {
+  font-family: 'GothamBlack';
+  src: url("fonts/gotham_black.ttf") format("truetype");
+  font-weight: normal; }
+@font-face {
+  font-family: 'GothamLight';
+  src: url("fonts/gotham_light.ttf") format("truetype");
+  font-weight: normal; }
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url("fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: normal; }
+@font-face {
+  font-family: 'Roboto_Condensed';
+  src: url("fonts/Roboto-Condensed.ttf") format("truetype");
+  font-weight: normal; }
+@font-face {
+  font-family: 'Roboto_Light';
+  src: url("fonts/Roboto-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Roboto_Regular';
+  src: url("fonts/Roboto-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Roboto_Bold';
+  src: url("fonts/Roboto-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'MyriadLight';
+  src: url("fonts/MyriadPro_Light.otf") format("opentype"), url("fonts/MyriadPro_Light.ttf") format("truetype"), url("fonts/MyriadPro_Light.eot");
+  font-weight: normal;
+  font-style: normal; }
+.back {
+  background: url(images/back.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  height: 500px; }
+
+.logo {
+  background: url(images/logo.png) no-repeat;
+  width: 401px;
+  height: 79px; }
+
+#header-main {
+  padding: 30px;
+  font-family: GothamLight;
+  color: #fff; }
+
+hr {
+  background: #e8e8e8;
+  opacity: 0.8;
+  height: 1px; }
+
+#nav-main {
+  float: right; }
+  #nav-main ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #nav-main ul li {
+      padding: 10px 0 4px 0;
+      border-bottom: 3px solid transparent; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+@import 'base';
+@import 'common';
+@import 'fonts';
+//@import 'normalize.css';
+
+.back{
+  background: url(images/back.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  height: 500px;
+  //position: absolute;
+}
+
+.logo{
+  background: url(images/logo.png) no-repeat;
+  width: 401px;
+  height: 79px;
+}
+#header-main{
+  padding: 30px;
+  font-family: GothamLight;
+  color: #fff;
+}
+
+hr{
+  background: #e8e8e8;
+  opacity: 0.8;
+  height: 1px;
+}
+
+#nav-main{
+  float: right;
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      padding: 10px 0 4px 0;
+      border-bottom: 3px solid transparent;
+    }
+  }
+}

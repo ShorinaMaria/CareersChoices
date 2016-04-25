@@ -1,0 +1,29 @@
+a,input,button:focus {
+  outline: none !important;
+  text-decoration: none;
+}
+.clear{ clear: both;}
+.hidden{display: none;}
+
+*{@include borderbox();}
+
+input,button {
+  display: block;
+  margin: 0 auto;
+  &::-moz-focus-inner{
+    border: 0;
+  }
+}
+
+body,html{
+  margin: 0;
+  padding: 0;
+}
+hr{
+  border: none;
+  margin: 0;
+}
+
+a.logo{
+  display: block;
+}
