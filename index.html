@@ -17,31 +17,65 @@
 </head>
 <body>
 
-    <div class="back">
+    <div id="back" data-0="height:1100px;" data-1="height:120px; position:fixed;">
 
     </div>
-    <div style="position: absolute; top:0; left:0; right: 0;">
+
+    <div id="dotted" style="position: fixed; width: 100%;">
+
         <header id="header-main">
             <a class="logo" href="/"></a>
             <nav id="nav-main">
                 <ul>
-                    <li>For candidates</li>
-                    <li>Blog</li>
-                    <li>About us</li>
+                    <li><a href="/">For candidates</a></li>
+                    <li><a href="/">Blog</a></li>
+                    <li><a href="/">About us</a></li>
                 </ul>
             </nav>
+            <div class="clear"></div>
         </header>
 
         <hr/>
 
-        <main>
-
+        <main id="screen-main" data-0="top:200px; left:0px;" data-1="top:-263px; left:90px;">
+            <div class="title">Find job</div>
+            <div class="subtitle">Employment opportunities for you</div>
+            <form>
+                <input type="text" placeholder="job title, keywords or company"/>
+                <input type="text" placeholder="city, state or post code"/>
+                <button type="submit" class="btn-1">go</button>
+            </form>
         </main>
 
     </div>
 
 
 
+
+    <div id="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet ligula in dolor vehicula, ut luctus felis dignissim. Sed risus lectus, scelerisque vel lacinia non, aliquam quis leo. Cras quis eleifend lacus. Proin tortor est, sagittis ac lobortis vel, feugiat id lacus. Aenean dictum urna sit amet massa imperdiet, eget tristique tortor porta. Sed sit amet eleifend dolor. Phasellus tempor placerat enim. Suspendisse ultrices, ipsum nec faucibus dignissim, tellus purus vulputate est, et sodales neque dolor et mauris. Quisque vel lacinia ipsum, non commodo mauris. Nam mollis quam vitae mauris imperdiet eleifend. Nulla interdum erat sit amet sem pharetra, vitae sagittis magna pulvinar.</p>
+
+        <p>Fusce efficitur massa quis mi finibus, non convallis leo malesuada. Vivamus egestas metus ut nulla rhoncus consequat. Praesent feugiat ligula ipsum, non elementum libero eleifend ac. Morbi efficitur, mauris at luctus consectetur, nisi velit hendrerit nisi, a viverra orci mi ac arcu. Mauris a enim magna. Quisque ut accumsan urna. Vivamus tincidunt in erat eget tincidunt. Ut in orci non leo venenatis congue. Nam sit amet arcu non purus pretium congue vestibulum et nunc. Sed blandit mauris nec tellus iaculis scelerisque. Duis elit sem, luctus ut nisi eget, pharetra venenatis est. Vestibulum vel tortor vel ligula cursus tempor.</p>
+
+        <p>Vestibulum laoreet facilisis semper. Quisque aliquam arcu gravida, ornare erat eget, pretium diam. Maecenas lobortis iaculis leo, et rutrum nisl lacinia non. Ut viverra diam nunc, sit amet eleifend mauris ullamcorper sed. Nullam hendrerit tempus nisl ut dapibus. Nulla eu nunc sed elit vehicula viverra at vel urna. Mauris egestas, lectus sit amet sagittis semper, massa neque tincidunt est, ac commodo lorem dui nec felis. Nulla tincidunt finibus tincidunt. Fusce efficitur blandit odio eu congue. Ut non urna nec leo sagittis sagittis tincidunt vitae ante. Aenean vitae erat ut turpis dignissim porttitor id vel sapien. Proin imperdiet eget eros viverra vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ullamcorper vitae erat vitae efficitur.</p>
+
+        <p>In at lacinia augue. In sit amet nulla turpis. Nam non arcu eget justo ornare porttitor. Maecenas tristique pellentesque turpis, ut ornare ex lacinia id. Nam cursus libero ac dolor lacinia, ac volutpat ex lobortis. Proin in tellus ac lectus luctus aliquet eu nec neque. Nulla dolor lacus, vehicula a aliquet vitae, vehicula id tellus. Duis vitae turpis faucibus, porttitor ex ut, consectetur felis. Etiam tincidunt ullamcorper est nec rutrum.</p>
+
+        <p>Maecenas vel dignissim risus. Mauris vitae diam et orci dignissim feugiat. Sed volutpat quis ante quis mattis. Vivamus ac pellentesque sem. Aliquam erat volutpat. Mauris ac sollicitudin magna, egestas consectetur mi. Nulla facilisi. Vestibulum venenatis, nisl scelerisque posuere sodales, nisl arcu pharetra est, vel vestibulum tellus justo quis tellus. Cras rutrum risus pellentesque, laoreet sapien eget, rhoncus turpis. Sed orci quam, dignissim id volutpat sed, gravida vitae augue. Duis eu suscipit ligula, at feugiat enim. Duis vel tellus sollicitudin odio condimentum laoreet. Phasellus gravida feugiat urna, sed lobortis elit tristique quis.</p>
+    </div>
+
+
+
+
+    <footer>
+        <div class="copyright">Careerschoices © 2015. Privacy Policy</div>
+    </footer>
+
+    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="skrollr.min.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
     <script src="main.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
