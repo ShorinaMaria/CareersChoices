@@ -6,8 +6,9 @@
 $cyan: #2BD8C9; //#33C0B4;
 $cyan_bright: #00FFE9;
 $black: #333;
-$max_width: 1024px;
-$hdr_small_height: 120px;
+$max_width: 1200px;
+$hdr_height_small: 120px;
+$hdr_height_big: 1100px;
 
 
 input[type="text"]{
@@ -37,6 +38,21 @@ input[type="text"]{
     background: $cyan;
   }
 }
+.btn-2{
+  cursor: pointer;
+  border: 3px solid $cyan;
+  background: $cyan;
+  text-transform: uppercase;
+  font-family: GothamBlack;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 30px;
+  line-height: 27px;
+  @include transitioned(all .3s);
+  &:hover{
+    background: $cyan;
+  }
+}
 
 //===============================================================>
 body{
@@ -45,10 +61,12 @@ body{
   font-size: 20px;
 }
 #back{
-  background: url(images/back.jpg) no-repeat center;
+  background: url(images/back.jpg) no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
-  height: 1100px;
+  //top:0; left:0;right:0;
+  height: $hdr_height_big;
   position: relative;
   @include transitioned(all 1s);
   &:after{
@@ -86,8 +104,21 @@ body{
   float: left;
 }
 #header-main{
+  position: relative;
   padding: 20px 30px;
   font-family: GothamLight;
+  &.scrolled{
+    background: url(images/back.jpg) no-repeat;//$hdr_height_small - $hdr_height_big;
+    background-size: cover;
+    &:after{
+      @extend #back:after;
+    }
+  }
+
+  .inner{
+    position: relative;
+    z-index: 10;
+  }
 }
 
 
@@ -129,10 +160,10 @@ body{
   width: 1004px;
   margin: 0 auto;
   position: relative;
-  //top: 200px;
-  //left:0;
+  top: 200px;
+  left:0;
   color: #fff;
-  @include transitioned(all 1s);
+  @include transitioned(all .8s);
 
   .title{
     font-family: GothamBlack;
@@ -169,27 +200,40 @@ body{
 
 //==========================================> body scrolled
 body.scrolled{
-  #back{
-    //position: fixed;
-    //height: $hdr_small_height;
-    //background-position: center 70%;
-  }
   #dotted hr{
     width: 0%;
   }
   #screen-main{
-    //top: -63px - 200px;
-    //left: 90px;
+    top: -63px - 200px;
+    left: 90px;
+    z-index: 20;
     .title,.subtitle{
       margin-left: -2000px;
       opacity: 0;
     }
   }
   #nav-main{opacity: 0;}
+
+  #header-main{
+    //background: black;
+  }
 }
+
+body.no-transition{
+  #screen-main,
+  #screen-main .title,
+  #screen-main .subtitle
+  {@include transitioned(none);}
+}
+
 
 #content{
   width: $max_width;
   margin: 0 auto;
-  padding: 30px;
+  margin-top: 50px;
+  padding: 20px;
+  position: relative;
 }
+
+
+@import 'job';

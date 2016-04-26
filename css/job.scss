@@ -1,0 +1,46 @@
+.job{
+  margin-top: 20px;
+  color: $black;
+  border-bottom: 3px solid $cyan;
+  >:not(.clear){
+    float: left;
+    margin: 0 20px 20px 0;
+  }
+  .avatar{
+    width: 100px;
+    height: 100px;
+    img{
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .title{
+    font-family: RobotoLight;
+    font-size: 28px;
+    width: 400px;
+    position: relative;
+    top: -6px;
+  }
+  .company{
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  .time{
+    font-family: RobotoMedium;
+    width: 120px;
+  }
+  .tags{
+    margin-right: 0;
+    width: 240px;
+  }
+}
+
+.tag{
+  font-family: RobotoMedium;
+  font-size: 16px;
+  background: $black;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 5px 5px 0;
+  float: left;
+}

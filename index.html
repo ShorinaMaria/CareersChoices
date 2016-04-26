@@ -17,27 +17,29 @@
 </head>
 <body>
 
-    <div id="back" data-0="height:1100px;" data-1="height:120px; position:fixed;">
+    <div id="back">
 
     </div>
 
-    <div id="dotted" style="position: fixed; width: 100%;">
+    <div id="dotted" style="position: fixed; width: 100%;z-index: 100;">
 
         <header id="header-main">
-            <a class="logo" href="/"></a>
-            <nav id="nav-main">
-                <ul>
-                    <li><a href="/">For candidates</a></li>
-                    <li><a href="/">Blog</a></li>
-                    <li><a href="/">About us</a></li>
-                </ul>
-            </nav>
-            <div class="clear"></div>
+            <div class="inner">
+                <a class="logo" href="/"></a>
+                <nav id="nav-main">
+                    <ul>
+                        <li><a href="/">For candidates</a></li>
+                        <li><a href="/">Blog</a></li>
+                        <li><a href="/">About us</a></li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </div>
         </header>
 
         <hr/>
 
-        <main id="screen-main" data-0="top:200px; left:0px;" data-1="top:-263px; left:90px;">
+        <main id="screen-main">
             <div class="title">Find job</div>
             <div class="subtitle">Employment opportunities for you</div>
             <form>
@@ -53,6 +55,52 @@
 
 
     <div id="content">
+        <div class="job">
+            <div class="avatar"><img src="https://lh4.googleusercontent.com/-mkkx6-EDIT4/AAAAAAAAAAI/AAAAAAAAAU4/gNS4EWc-o1w/s0-c-k-no-ns/photo.jpg"/></div>
+            <div class="title">Experienced Meteor Developer For Web Mobile App Development
+                <div class="company">Oracle</div>
+            </div>
+            <div class="time">3 months</div>
+            <div class="tags">
+                <div class="tag">Meteor.js</div>
+                <div class="tag">Full-time</div>
+                <div class="tag">Sydney</div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="job">
+            <div class="avatar"><img src="https://pbs.twimg.com/profile_images/614802024832610304/_CZY2puL.jpg"/></div>
+            <div class="title">Top Manager
+                <div class="company">IBM</div>
+            </div>
+            <div class="time">2 days</div>
+            <div class="tags">
+                <div class="tag">management</div>
+                <div class="tag">Full-time</div>
+                <div class="tag">Sydney</div>
+            </div>
+            <div class="apply">
+                <button class="btn-2">Apply</button>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="job">
+            <div class="avatar"><img src="https://pbs.twimg.com/profile_images/614802024832610304/_CZY2puL.jpg"/></div>
+            <div class="title">Internal Medicine/Family Practice Physician
+                <div class="company">Healthcare Services</div>
+            </div>
+            <div class="time">today</div>
+            <div class="tags">
+                <div class="tag">Physician</div>
+                <div class="tag">Healthcare</div>
+                <div class="tag">Full-time</div>
+                <div class="tag">New York</div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet ligula in dolor vehicula, ut luctus felis dignissim. Sed risus lectus, scelerisque vel lacinia non, aliquam quis leo. Cras quis eleifend lacus. Proin tortor est, sagittis ac lobortis vel, feugiat id lacus. Aenean dictum urna sit amet massa imperdiet, eget tristique tortor porta. Sed sit amet eleifend dolor. Phasellus tempor placerat enim. Suspendisse ultrices, ipsum nec faucibus dignissim, tellus purus vulputate est, et sodales neque dolor et mauris. Quisque vel lacinia ipsum, non commodo mauris. Nam mollis quam vitae mauris imperdiet eleifend. Nulla interdum erat sit amet sem pharetra, vitae sagittis magna pulvinar.</p>
 
         <p>Fusce efficitur massa quis mi finibus, non convallis leo malesuada. Vivamus egestas metus ut nulla rhoncus consequat. Praesent feugiat ligula ipsum, non elementum libero eleifend ac. Morbi efficitur, mauris at luctus consectetur, nisi velit hendrerit nisi, a viverra orci mi ac arcu. Mauris a enim magna. Quisque ut accumsan urna. Vivamus tincidunt in erat eget tincidunt. Ut in orci non leo venenatis congue. Nam sit amet arcu non purus pretium congue vestibulum et nunc. Sed blandit mauris nec tellus iaculis scelerisque. Duis elit sem, luctus ut nisi eget, pharetra venenatis est. Vestibulum vel tortor vel ligula cursus tempor.</p>
@@ -72,10 +120,17 @@
     </footer>
 
     <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+
+    <script src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+    <!--
     <script type="text/javascript" src="skrollr.min.js"></script>
     <script type="text/javascript">
         var s = skrollr.init();
     </script>
+    -->
     <script src="main.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
