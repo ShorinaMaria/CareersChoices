@@ -64,6 +64,10 @@ a.logo {
   src: url("fonts/roboto/Roboto-Light.ttf") format("truetype");
   font-weight: normal; }
 @font-face {
+  font-family: 'BebasNeueRegular';
+  src: url("fonts/BebasNeueRegular.ttf") format("truetype");
+  font-weight: normal; }
+@font-face {
   font-family: 'Roboto_Condensed';
   src: url("fonts/Roboto-Condensed.ttf") format("truetype");
   font-weight: normal; }
@@ -87,10 +91,11 @@ input[type="text"] {
   font-size: 20px;
   font-family: GothamLight;
   border: 1px solid transparent;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  transition: all 0.8s; }
+  width: 400px;
+  -webkit-transition: box-shadow 0.8s;
+  -moz-transition: box-shadow 0.8s;
+  -o-transition: box-shadow 0.8s;
+  transition: box-shadow 0.8s; }
   input[type="text"]:focus {
     border: 1px solid #00FFE9;
     -webkit-box-shadow: 0px 0px 20px 1px rgba(51, 192, 180, 0.7);
@@ -99,7 +104,7 @@ input[type="text"] {
     -o-box-shadow: 0px 0px 20px 1px rgba(51, 192, 180, 0.7);
     box-shadow: 0px 0px 20px 1px rgba(51, 192, 180, 0.7); }
 
-.btn-1 {
+.btn {
   cursor: pointer;
   border: 3px solid #2BD8C9;
   background: transparent;
@@ -109,28 +114,11 @@ input[type="text"] {
   padding: 10px 40px;
   font-size: 34px;
   line-height: 27px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; }
-  .btn-1:hover {
-    background: #2BD8C9; }
-
-.btn-2 {
-  cursor: pointer;
-  border: 3px solid #2BD8C9;
-  background: #2BD8C9;
-  text-transform: uppercase;
-  font-family: GothamBlack;
-  color: #fff;
-  padding: 10px 40px;
-  font-size: 30px;
-  line-height: 27px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; }
-  .btn-2:hover {
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s; }
+  .btn:hover {
     background: #2BD8C9; }
 
 body {
@@ -143,13 +131,10 @@ body {
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  height: 1100px;
-  position: relative;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s; }
-  #back:after, #header-main.scrolled:after {
+  position: absolute;
+  top: 0;
+  bottom: 0; }
+  #back:after {
     content: ' ';
     position: absolute;
     left: 0;
@@ -161,18 +146,18 @@ body {
 
 #dotted {
   position: absolute;
-  top: 0;
+  top: 300px;
   left: 0;
   right: 0; }
-  #dotted hr {
-    background: #bbb;
-    opacity: 0.5;
-    width: 100%;
-    height: 1px;
-    -webkit-transition: all 1.5s;
-    -moz-transition: all 1.5s;
-    -o-transition: all 1.5s;
-    transition: all 1.5s; }
+
+hr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #bbb;
+  opacity: 0.5;
+  width: 100%;
+  height: 1px; }
 
 .logo {
   background: url(images/logo.png) no-repeat;
@@ -184,12 +169,8 @@ body {
   position: relative;
   padding: 20px 30px;
   font-family: GothamLight; }
-  #header-main.scrolled {
-    background: url(images/back.jpg) no-repeat;
-    background-size: cover; }
   #header-main .inner {
-    position: relative;
-    z-index: 10; }
+    position: relative; }
 
 #nav-main {
   float: right; }
@@ -225,33 +206,17 @@ body {
   width: 1004px;
   margin: 0 auto;
   position: relative;
-  top: 200px;
-  left: 0;
-  color: #fff;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  transition: all 0.8s; }
+  color: #fff; }
   #screen-main .title {
     font-family: GothamBlack;
     font-size: 100px;
-    text-transform: uppercase;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s; }
+    text-transform: uppercase; }
   #screen-main .subtitle {
     font-family: GothamLight;
-    font-size: 42px;
-    -webkit-transition: all 1.3s;
-    -moz-transition: all 1.3s;
-    -o-transition: all 1.3s;
-    transition: all 1.3s; }
+    font-size: 42px; }
   #screen-main form > * {
     float: left;
     margin: 20px 20px 20px 0; }
-  #screen-main input[type="text"] {
-    width: 400px; }
 
 .copyright {
   color: #fff;
@@ -263,70 +228,5 @@ body {
   bottom: 0;
   left: 0;
   right: 0; }
-
-body.scrolled #dotted hr {
-  width: 0%; }
-body.scrolled #screen-main {
-  top: -263px;
-  left: 90px;
-  z-index: 20; }
-  body.scrolled #screen-main .title, body.scrolled #screen-main .subtitle {
-    margin-left: -2000px;
-    opacity: 0; }
-body.scrolled #nav-main {
-  opacity: 0; }
-
-body.no-transition #screen-main,
-body.no-transition #screen-main .title,
-body.no-transition #screen-main .subtitle {
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none; }
-
-#content {
-  width: 1200px;
-  margin: 0 auto;
-  margin-top: 50px;
-  padding: 20px;
-  position: relative; }
-
-.job {
-  margin-top: 20px;
-  color: #333;
-  border-bottom: 3px solid #2BD8C9; }
-  .job > :not(.clear) {
-    float: left;
-    margin: 0 20px 20px 0; }
-  .job .avatar {
-    width: 100px;
-    height: 100px; }
-    .job .avatar img {
-      width: 100px;
-      height: 100px; }
-  .job .title {
-    font-family: RobotoLight;
-    font-size: 28px;
-    width: 400px;
-    position: relative;
-    top: -6px; }
-  .job .company {
-    font-size: 20px;
-    margin-top: 5px; }
-  .job .time {
-    font-family: RobotoMedium;
-    width: 120px; }
-  .job .tags {
-    margin-right: 0;
-    width: 240px; }
-
-.tag {
-  font-family: RobotoMedium;
-  font-size: 16px;
-  background: #333;
-  color: #fff;
-  padding: 5px 10px;
-  margin: 0 5px 5px 0;
-  float: left; }
 
 /*# sourceMappingURL=style.css.map */
